@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <h1>Calculator App</h1>
+    <section>
+        <div class="calculator-container">
+            <div class="calculator-screen">
+                <input type="text" id="input" readonly>
+            </div>
+            <div class="calculator-grid">
+                <button type="button" name="7" value="7">7</button>
+                <button type="button" name="8" value="8">8</button>
+                <button type="button" name="9" value="9">9</button>
+                <button type="button" name="/" onclick="operation('/')">/</button>
+                <button type="button" name="4" value="4">4</button>
+                <button type="button" name="5" value="5">5</button>
+                <button type="button" name="6" value="6">6</button>
+                <button type="button" name="*" onclick="operation('*')">*</button>
+                <button type="button" name="1" value="1">1</button>
+                <button type="button" name="2" value="2">2</button>
+                <button type="button" name="3" value="3">3</button>
+                <button type="button" name="-" onclick="operation('-')">-</button>
+                <button type="button" onclick="clearInput()">AC</button>
+                <button type="button" value="0">0</button>
+                <button type="button" onclick="equals()">=</button>
+                <button type="button" onclick="operation('+')">+</button>
+                <button type="button" value=".">.</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
